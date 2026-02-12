@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain-Based Student Certificate Verification System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include crypto-js for SHA-256 hashing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Blockchain-Based Student Certificate Verification System</h1>
+        <p>A simple demo for verifying certificate authenticity using blockchain technology.</p>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Upload Certificate</h2>
+            <textarea id="certificate-text" placeholder="Paste certificate text here or upload a file below"></textarea>
+            <input type="file" id="certificate-file" accept=".txt,.pdf,.docx">
+            <button id="generate-hash-btn">Generate SHA-256 Hash</button>
+            <p id="hash-display"></p>
+        </section>
+
+        <section id="blockchain-section">
+            <h2>Add to Blockchain</h2>
+            <button id="add-block-btn">Add Certificate Hash to Blockchain</button>
+        </section>
+
+        <section id="verify-section">
+            <h2>Verify Certificate</h2>
+            <textarea id="verify-text" placeholder="Enter certificate text to verify"></textarea>
+            <button id="verify-btn">Verify</button>
+        </section>
+
+        <section id="blockchain-viewer">
+            <h2>Blockchain Viewer</h2>
+            <div id="blocks-container"></div>
+        </section>
+
+        <section id="tamper-test">
+            <h2>Tamper Test</h2>
+            <button id="tamper-btn">Tamper with Block 1 (if exists)</button>
+        </section>
+
+        <div id="result-message"></div>
+    </main>
+
+    <script src="blockchain.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

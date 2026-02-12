@@ -1,0 +1,35 @@
+ASCII Architecture Diagram for Blockchain-Based Student Certificate Verification System
+
++-------------------+       +-------------------+       +-------------------+
+|   User Interface  |       |   Script.js       |       |   Blockchain.js   |
+|   (HTML/CSS)      |       |   (Event Handlers)|       |   (Block/Chain)   |
+|                   |       |                   |       |                   |
+| - Upload Section  |<----->| - Handle Upload   |<----->| - Block Class     |
+| - Hash Display    |       | - Generate Hash   |       |   (index, ts,     |
+| - Buttons         |       | - Add to Chain    |       |    data, prevHash)|
+| - Verify Input    |       | - Verify Hash     |       |                   |
+| - Blockchain View |       | - Display Blocks  |       | - Blockchain Class|
+| - Result Messages |       | - Tamper Test     |       |   (chain array,   |
++-------------------+       +-------------------+       |    addBlock,      |
+                                                        |    isChainValid)  |
+                                                        +-------------------+
+                                                                 |
+                                                                 |
+                                                                 v
+                                                        +-------------------+
+                                                        |   Crypto Library  |
+                                                        |   (crypto-js)     |
+                                                        |                   |
+                                                        | - SHA-256 Hashing |
+                                                        +-------------------+
+
+Flow:
+1. User interacts with UI (upload, generate, add, verify).
+2. Script.js processes events, calls Blockchain.js for chain operations.
+3. Blockchain.js uses crypto-js for hashing and manages blocks.
+4. Results displayed back in UI.
+
+Key Components:
+- UI: Pure HTML/CSS for layout and styling.
+- Logic: JS handles interactions and blockchain logic.
+- Hashing: External library for SHA-256 (no server needed).

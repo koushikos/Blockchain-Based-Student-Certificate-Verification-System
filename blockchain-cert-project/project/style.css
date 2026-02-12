@@ -1,0 +1,215 @@
+/* Modern Cyber-Security Themed Styles for Blockchain Certificate Verification System */
+
+body {
+    font-family: 'Courier New', monospace; /* Techy monospace font */
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); /* Dark gradient background */
+    color: #00ff00; /* Neon green text */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(0, 255, 0, 0.1); /* Subtle green overlay */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3); /* Neon glow */
+}
+
+header h1 {
+    color: #00ff00;
+    font-size: 3em;
+    text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00; /* Strong neon glow */
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin: 10px 0 0 0;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+}
+
+section {
+    background: linear-gradient(145deg, #1a1a1a, #2a2a2a); /* Card-like gradient */
+    border: 2px solid #00ff00;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 255, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1); /* 3D card effect with glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 255, 0, 0.4); /* Enhanced glow on hover */
+}
+
+section h2 {
+    color: #00ff00;
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 0 0 10px #00ff00;
+    font-size: 1.5em;
+    border-bottom: 1px solid #00ff00;
+    padding-bottom: 10px;
+}
+
+textarea, input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    background: rgba(0, 255, 0, 0.1); /* Semi-transparent green */
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 8px;
+    font-family: inherit;
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border-color: #00cc00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+button {
+    background: linear-gradient(45deg, #00ff00, #00cc00);
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #00cc00, #009900);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 0, 0.5);
+}
+
+#hash-display {
+    background: rgba(0, 255, 0, 0.1);
+    padding: 12px;
+    border: 1px solid #00ff00;
+    border-radius: 8px;
+    word-wrap: break-word;
+    color: #00ff00;
+    font-family: monospace;
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+#blocks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.block {
+    background: linear-gradient(145deg, #333, #444);
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    padding: 15px;
+    color: #00ff00;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.block:hover {
+    transform: scale(1.02);
+}
+
+.block h3 {
+    margin: 0 0 12px 0;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+#result-message {
+    grid-column: span 2;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    box-shadow: 0 8px 32px rgba(0, 255, 0, 0.3);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#result-message.valid {
+    background: linear-gradient(135deg, #004400, #006600);
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+#result-message.invalid {
+    background: linear-gradient(135deg, #440000, #660000);
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #result-message {
+        grid-column: span 1;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}

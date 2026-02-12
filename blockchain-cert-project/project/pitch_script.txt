@@ -1,0 +1,21 @@
+2-Minute Pitch Script for Blockchain-Based Student Certificate Verification System (Ideathon Presentation)
+
+[Introduction - 20 seconds]
+"Hello judges and fellow innovators! Today, I'm excited to present our Blockchain-Based Student Certificate Verification System – a simple yet powerful demo that tackles the growing problem of fake certificates in education."
+
+[Problem - 20 seconds]
+"Imagine a world where employers can't trust diplomas, or students face delays in job verification. Traditional systems are centralized, slow, and vulnerable to tampering. Fake certificates cost millions in fraud annually. Our solution? Blockchain – decentralized, immutable, and secure."
+
+[Solution & Demo - 40 seconds]
+"Our web app lets users upload certificate text or files, generate a SHA-256 hash – a unique digital fingerprint – and store it in a blockchain. Each block links to the previous via hashes, ensuring tamper-proof records. Watch this: [Demo: Upload sample cert, generate hash, add to blockchain, verify as VALID in green.] Now, tamper with it [Demo: Click tamper button, verify shows FAKE in red.] See? Instant detection!"
+
+[How It Works Briefly - 20 seconds]
+"Built with HTML, CSS, and JavaScript – no server needed. Uses crypto-js for hashing. Features: Upload, hash, add block, verify, view chain, and tamper test. Perfect for beginners to understand blockchain basics."
+
+[Impact & Future - 20 seconds]
+"This demo shows real potential for education, supply chains, and beyond. Future: Integrate with real blockchains like Ethereum for global verification. It's scalable, secure, and ready for the future."
+
+[Conclusion - 20 seconds]
+"Thank you! Blockchain isn't just for crypto – it's for trust. Questions? [Pause for Q&A]"
+
+[Total Time: ~2 minutes. Practice timing, use visuals from app, speak confidently.]
